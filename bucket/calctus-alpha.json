@@ -11,15 +11,8 @@
         }
     },
     "bin": "Calctus.exe",
-    "shortcuts": [
-        [
-            "Calctus.exe",
-            "Calctus"
-        ]
-    ],
-    "checkver": {
-        "github": "https://github.com/shapoco/calctus"
-    },
+    "shortcuts": [["Calctus.exe", "Calctus"]],
+    "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {
