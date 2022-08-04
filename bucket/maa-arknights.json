@@ -5,8 +5,8 @@
     "license": "AGPL-3.0-only",
     "url": "https://github.com/MaaAssistantArknights/MaaAssistantArknights/releases/download/v4.2.2/MaaBundle-v4.2.2.zip",
     "hash": "372cbc2c8514d5576161d82a88506e02c94825cee46d54258639e66e025c6c8e",
-    "bin": "MeoAssistGUI.exe",
-    "shortcuts": [["MeoAssistGUI.exe", "MaaAssistantArknights"]],
+    "bin": "MeoAsstGUI.exe",
+    "shortcuts": [["MeoAsstGUI.exe", "MaaAssistantArknights"]],
     "suggest": {
         "emulators": [
             "nonportable/bluestacks-np",
