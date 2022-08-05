@@ -19,7 +19,7 @@
         "    Copy-Item \"$persist_dir\\gui.json\" \"$dir\"",
         "} else {",
         "    ensure \"$persist_dir\" | Out-Null",
-        "    Set-Content \"$dir\\gui.json\" '[BatchResize]', 'update=0' -Encoding Ascii",
+        "    Set-Content \"$dir\\gui.json\" '{','\"VersionUpdate.AutoDownloadUpdatePackage\": \"False\",', '\"VersionUpdate.UseAria2\": \"False\"','}' -Encoding Ascii",
         "}"
     ],
     "uninstaller": {
