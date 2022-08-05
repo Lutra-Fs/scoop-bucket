@@ -1,0 +1,40 @@
+{
+    "version": "4.2.2",
+    "description": "An Arknights game assissant",
+    "homepage": "https://maa.plus/",
+    "license": "AGPL-3.0-only",
+    "url": "https://github.com/MaaAssistantArknights/MaaAssistantArknights/releases/download/v4.2.2/MaaBundle-v4.2.2.zip",
+    "hash": "372cbc2c8514d5576161d82a88506e02c94825cee46d54258639e66e025c6c8e",
+    "bin": "MeoAsstGUI.exe",
+    "shortcuts": [
+        [
+            "MeoAsstGUI.exe",
+            "MaaAssistantArknights"
+        ]
+    ],
+    "suggest": {
+        "emulators": [
+            "nonportable/bluestacks-np",
+            "nonportable/bluestacks-hyperv-np"
+        ],
+        "adb": "adb"
+    },
+    "pre_install": [
+        "if (Test-Path \"$persist_dir\\gui.json\") {",
+        "    Copy-Item \"$persist_dir\\gui.json\" \"$dir\"",
+        "} else {",
+        "    ensure \"$persist_dir\" | Out-Null",
+        "    Set-Content \"$dir\\gui.json\" '{','\"VersionUpdate.AutoDownloadUpdatePackage\": \"False\",', '\"VersionUpdate.UseAria2\": \"False\"','}' -Encoding Ascii",
+        "}"
+    ],
+    "uninstaller": {
+        "script": "Copy-Item \"$dir\\gui.json\" \"$persist_dir\" -ErrorAction SilentlyContinue -Force"
+    },
+    "checkver": {
+        "url": "https://api.github.com/repos/MaaAssistantArknights/MaaAssistantArknights/releases",
+        "regex": "/releases/tag/(?:v)?([\\d.]+(-beta\\.\\d+)?)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/MaaAssistantArknights/MaaAssistantArknights/releases/download/v$version/MaaBundle-v$version.zip"
+    }
+}
