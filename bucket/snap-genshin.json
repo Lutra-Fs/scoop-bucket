@@ -3,7 +3,7 @@
     "description": "A Genshin Impact game launcher, with a lot of features.",
     "homepage": "https://www.snapgenshin.com/home/",
     "license": "MIT",
-    "url": "https://github.com/DGP-Studio/Snap.Genshin/releases/download/2022.8.5.11317/Publish.zip",
+    "url": "https://github.com/DGP-Studio/Snap.Genshin/releases/download/2022.8.5.11317/Publish.zip#/Snap_Genshin_2022.8.5.11317.zip",
     "hash": "d3db49739538a5f755cc79a8f7a63daa8ecd18ae4ae70c37c56ddb4b99e58781",
     "bin": "DGP.Genshin.exe",
     "shortcuts": [
@@ -15,9 +15,6 @@
     "pre_install": [
         "if (Test-Path \"$persist_dir\\accounts.json\") {",
         "    Copy-Item \"$persist_dir\\accounts.json\" \"$dir\"",
-        "} else {",
-        "    ensure \"$persist_dir\" | Out-Null",
-        "    Set-Content \"$dir\\accounts.json\" '[BatchResize]', 'update=0' -Encoding Ascii",
         "}",
         "if (Test-Path \"$persist_dir\\achievements.json\") {",
         "    Copy-Item \"$persist_dir\\achievements.json\" \"$dir\"",
@@ -90,6 +87,6 @@
         "github": "https://github.com/DGP-Studio/Snap.Genshin"
     },
     "autoupdate": {
-        "url": "https://github.com/DGP-Studio/Snap.Genshin/releases/download/$version/Publish.zip"
+        "url": "https://github.com/DGP-Studio/Snap.Genshin/releases/download/$version/Publish.zip#/Snap_Genshin_$version.zip"
     }
 }
