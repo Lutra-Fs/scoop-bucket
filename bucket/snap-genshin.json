@@ -1,12 +1,17 @@
 {
-    "version": "2022.7.24.10000",
+    "version": "2022.8.5.11317",
     "description": "A Genshin Impact game launcher, with a lot of features.",
     "homepage": "https://www.snapgenshin.com/home/",
     "license": "MIT",
-    "url": "https://github.com/DGP-Studio/Snap.Genshin/releases/download/2022.7.24.10000/Publish.zip",
-    "hash": "78350f2e7ac530dcf907db58c0ee06cd0d2495112cbca6dca267763f24da1774",
+    "url": "https://github.com/DGP-Studio/Snap.Genshin/releases/download/2022.8.5.11317/Publish.zip",
+    "hash": "d3db49739538a5f755cc79a8f7a63daa8ecd18ae4ae70c37c56ddb4b99e58781",
     "bin": "DGP.Genshin.exe",
-    "shortcuts": [["DGP.Genshin.exe", "Snap Genshin"]],
+    "shortcuts": [
+        [
+            "DGP.Genshin.exe",
+            "Snap Genshin"
+        ]
+    ],
     "pre_install": [
         "if (Test-Path \"$persist_dir\\accounts.json\") {",
         "    Copy-Item \"$persist_dir\\accounts.json\" \"$dir\"",
@@ -76,7 +81,11 @@
             "Copy-Item \"$dir\\implementations.json\" \"$persist_dir\" -ErrorAction SilentlyContinue -Force"
         ]
     },
-    "persist": ["Plugins", "GachaStatistic", "Cache"],
+    "persist": [
+        "Plugins",
+        "GachaStatistic",
+        "Cache"
+    ],
     "checkver": {
         "github": "https://github.com/DGP-Studio/Snap.Genshin"
     },
