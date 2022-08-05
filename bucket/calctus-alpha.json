@@ -11,14 +11,5 @@
         }
     },
     "bin": "Calctus.exe",
-    "shortcuts": [["Calctus.exe", "Calctus"]],
-    "checkver": "github",
-    "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://github.com/shapoco/calctus/releases/download/v$version-alpha/calctus-v$version-alpha.zip",
-                "extract_dir": "calctus-v$version-alpha"
-            }
-        }
-    }
+    "shortcuts": [["Calctus.exe", "Calctus"]]
 }
