@@ -4,7 +4,7 @@
     "homepage": "https://maa.plus/",
     "license": "AGPL-3.0-only",
     "url": "https://github.com/MaaAssistantArknights/MaaAssistantArknights/releases/download/v4.2.3/MaaBundle-v4.2.3.zip",
-    "hash": "e93db44c2c1b309997bf516fe806966498a4f8eebd576d36953e3bed175f5324",
+    "hash": "md5:b303e43e297904a3191da3107f15710d",
     "bin": "MeoAsstGUI.exe",
     "shortcuts": [
         [
@@ -34,6 +34,11 @@
         "github": "https://github.com/MaaAssistantArknights/MaaAssistantArknights"
     },
     "autoupdate": {
-        "url": "https://github.com/MaaAssistantArknights/MaaAssistantArknights/releases/download/v$version/MaaBundle-v$version.zip"
+        "url": "https://github.com/MaaAssistantArknights/MaaAssistantArknights/releases/download/v$version/MaaBundle-v$version.zip",
+        "hash": {
+            "mode": "json",
+            "url": "https://github.com/MaaAssistantArknights/MaaAssistantArknights/releases/download/v$version/checksum.json",
+            "jsonpath": "$[1].file_hash"
+        }
     }
 }
