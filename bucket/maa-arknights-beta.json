@@ -4,7 +4,7 @@
     "homepage": "https://maa.plus/",
     "license": "AGPL-3.0-only",
     "url": "https://github.com/MaaAssistantArknights/MaaAssistantArknights/releases/download/v4.2.4/MaaBundle-v4.2.4.zip",
-    "hash": "md5: 9922EAF3EC40A84800D97B5C4B88EA9D",
+    "hash": "md5:9922EAF3EC40A84800D97B5C4B88EA9D",
     "bin": "MeoAsstGUI.exe",
     "shortcuts": [
         [
