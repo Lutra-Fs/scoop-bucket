@@ -6,12 +6,7 @@
     "url": "https://github.com/DGP-Studio/Snap.Genshin/releases/download/2022.8.26.5230/Publish.zip#/Snap_Genshin_2022.8.26.5230.zip",
     "hash": "8d5b5c1a920e75146dd9f03a9164c99ce4ced19cd9163cdf75048d3a4ab2b01f",
     "bin": "DGP.Genshin.exe",
-    "shortcuts": [
-        [
-            "DGP.Genshin.exe",
-            "Snap Genshin"
-        ]
-    ],
+    "shortcuts": [["DGP.Genshin.exe", "Snap Genshin"]],
     "pre_install": [
         "if (Test-Path \"$persist_dir\\accounts.json\") {",
         "    Copy-Item \"$persist_dir\\accounts.json\" \"$dir\"",
@@ -78,11 +73,7 @@
             "Copy-Item \"$dir\\implementations.json\" \"$persist_dir\" -ErrorAction SilentlyContinue -Force"
         ]
     },
-    "persist": [
-        "Plugins",
-        "GachaStatistic",
-        "Cache"
-    ],
+    "persist": ["Plugins", "GachaStatistic", "Metadata"],
     "checkver": {
         "github": "https://github.com/DGP-Studio/Snap.Genshin"
     },
