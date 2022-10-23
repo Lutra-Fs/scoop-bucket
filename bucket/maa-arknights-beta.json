@@ -35,7 +35,7 @@
         "regex": "/releases/tag/(?:v)?([\\d.]+(-(beta|rc)\\.\\d+)?)"
     },
     "autoupdate": {
-        "url": "https://github.com/MaaAssistantArknights/MaaAssistantArknights/releases/download/v$version/MaaBundle-v$version.zip",
+        "url": "https://github.com/MaaAssistantArknights/MaaAssistantArknights/releases/download/v$version/MAA-v$version-win-x64.zip",
         "hash": {
             "mode": "json",
             "url": "https://github.com/MaaAssistantArknights/MaaAssistantArknights/releases/download/v$version/checksum.json",
