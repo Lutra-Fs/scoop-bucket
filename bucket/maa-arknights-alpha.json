@@ -1,10 +1,10 @@
 {
-    "version": "4.6.5-beta.1",
+    "version": "4.6.5-beta.2",
     "description": "An Arknights game assissant",
     "homepage": "https://maa.plus/",
     "license": "AGPL-3.0-only",
-    "url": "https://github.com/MaaAssistantArknights/MaaAssistantArknights/releases/download/v4.6.5-beta.1/MaaBundle-v4.6.5-beta.1.zip",
-    "hash": "md5:d17e427f766d359b8871d57c0fd86832",
+    "url": "https://github.com/MaaAssistantArknights/MaaAssistantArknights/releases/download/v4.6.5-beta.2/MAA-v4.6.5-beta.2-win-x64.zip",
+    "hash": "md5:5bd42d95ce50b0dc1dfeb09fdac5838d",
     "bin": "MeoAsstGUI.exe",
     "shortcuts": [
         [
