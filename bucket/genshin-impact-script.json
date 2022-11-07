@@ -10,22 +10,20 @@
         }
     },
     "bin": "GIS.exe",
-    "shortcuts": [
-        [
-            "GIS.exe",
-            "Genshin Impact Script"
-        ]
-    ],
-    "pre_install": [
+    "shortcuts": [["GIS.exe", "Genshin Impact Script"]],
+    "post_install": [
         "if (Test-Path \"$persist_dir\\config.ini\") {",
+        "    Remove-Item \"$dir\\config.ini\"",
         "    Copy-Item \"$persist_dir\\config.ini\" \"$dir\"",
         "}",
         "if (Test-Path \"$persist_dir\\character.ini\") {",
+        "    Remove-Item \"$dir\\character.ini\"",
         "    Copy-Item \"$persist_dir\\character.ini\" \"$dir\"",
         "}"
     ],
     "uninstaller": {
         "script": [
+            "ensure \"$persist_dir\" | Out-Null",
             "Copy-Item \"$dir\\config.ini\" \"$persist_dir\" -ErrorAction SilentlyContinue -Force",
             "Copy-Item \"$dir\\character.ini\" \"$persist_dir\" -ErrorAction SilentlyContinue -Force"
         ]

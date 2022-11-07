@@ -67,6 +67,7 @@
     ],
     "uninstaller": {
         "script": [
+            "ensure \"$persist_dir\" | Out-Null",
             "Copy-Item \"$dir\\accounts.json\" \"$persist_dir\" -ErrorAction SilentlyContinue -Force",
             "Copy-Item \"$dir\\achievements.json\" \"$persist_dir\" -ErrorAction SilentlyContinue -Force",
             "Copy-Item \"$dir\\achievementssteps.json\" \"$persist_dir\" -ErrorAction SilentlyContinue -Force",
