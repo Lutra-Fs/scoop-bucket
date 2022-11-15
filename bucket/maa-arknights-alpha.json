@@ -1,16 +1,21 @@
 {
-    "version": "4.6.14-alpha.0.57.g4d021c46",
+    "version": "4.6.14-alpha.0.73.g52024553",
     "description": "An Arknights game assissant",
     "homepage": "https://maa.plus/",
     "license": "AGPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/MaaAssistantArknights/MaaRelease/releases/download/v4.6.14-alpha.0.57.g4d021c46/MAA-v4.6.14-alpha.0.57.g4d021c46-win-x64.zip",
-            "hash": "d6af830d88070813012d60eba345e54d37961a970715b6700241204a8b675917"
+            "url": "https://github.com/MaaAssistantArknights/MaaRelease/releases/download/v4.6.14-alpha.0.73.g52024553/MAA-v4.6.14-alpha.0.73.g52024553-win-x64.zip",
+            "hash": "8637f3b5d7f57289b7b834a48f7f3ca6d98cc56380ab0f67ba476ae5bbe8598c"
         }
     },
     "bin": "MeoAsstGUI.exe",
-    "shortcuts": [["MeoAsstGUI.exe", "MaaAssistantArknights"]],
+    "shortcuts": [
+        [
+            "MeoAsstGUI.exe",
+            "MaaAssistantArknights"
+        ]
+    ],
     "suggest": {
         "emulators": [
             "nonportable/bluestacks-np",
