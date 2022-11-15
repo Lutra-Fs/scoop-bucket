@@ -1,17 +1,16 @@
 {
-    "version": "4.6.13",
+    "version": "4.6.14-alpha.0.57.g4d021c46",
     "description": "An Arknights game assissant",
     "homepage": "https://maa.plus/",
     "license": "AGPL-3.0-only",
-    "url": "https://github.com/MaaAssistantArknights/MaaAssistantArknights/releases/download/v4.6.13/MAA-v4.6.13-win-x64.zip",
-    "hash": "md5:bc815a649b532aa0ab4f2a1c4730f171",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/MaaAssistantArknights/MaaRelease/releases/download/v4.6.14-alpha.0.57.g4d021c46/MAA-v4.6.14-alpha.0.57.g4d021c46-win-x64.zip",
+            "hash": "d6af830d88070813012d60eba345e54d37961a970715b6700241204a8b675917"
+        }
+    },
     "bin": "MeoAsstGUI.exe",
-    "shortcuts": [
-        [
-            "MeoAsstGUI.exe",
-            "MaaAssistantArknights"
-        ]
-    ],
+    "shortcuts": [["MeoAsstGUI.exe", "MaaAssistantArknights"]],
     "suggest": {
         "emulators": [
             "nonportable/bluestacks-np",
@@ -31,15 +30,10 @@
         "script": "Copy-Item \"$dir\\gui.json\" \"$persist_dir\" -ErrorAction SilentlyContinue -Force"
     },
     "checkver": {
-        "url": "https://api.github.com/repos/MaaAssistantArknights/MaaAssistantArknights/releases",
-        "regex": "/releases/tag/(?:v)?([\\d.]+(-(alpha|beta|rc)\\.\\d+)?)"
+        "url": "https://api.github.com/repos/MaaAssistantArknights/MaaRelease/releases",
+        "regex": "/releases/tag/(?:v)?([\\d.]+(-(alpha\\.\\d.\\d+.\\w+|(beta|rc)\\.\\d+))?)"
     },
     "autoupdate": {
-        "url": "https://github.com/MaaAssistantArknights/MaaAssistantArknights/releases/download/v$version/MAA-v$version-win-x64.zip",
-        "hash": {
-            "mode": "json",
-            "url": "https://github.com/MaaAssistantArknights/MaaAssistantArknights/releases/download/v$version/checksum.json",
-            "jsonpath": "$[0].file_hash"
-        }
+        "url": "https://github.com/MaaAssistantArknights/MaaRelease/releases/download/v$version/MAA-v$version-win-x64.zip"
     }
 }
