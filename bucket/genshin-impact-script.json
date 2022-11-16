@@ -1,16 +1,21 @@
 {
-    "version": "0.0.46",
+    "version": "0.0.47",
     "description": "A sweet genshin impact script, contains many functions such as auto-fishing, auto-pickup, battle assist, etc",
     "homepage": "https://github.com/phonowell/genshin-impact-script",
     "license": "MIT license",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/phonowell/genshin-impact-script/releases/download/0.0.46/GIS_0.0.46.7z",
-            "hash": "8337fbc286acf0c2d6bf8db9cb535f5595bc8c9175484313ad715ddb4e2cd731"
+            "url": "https://github.com/phonowell/genshin-impact-script/releases/download/0.0.47/GIS_0.0.47.7z",
+            "hash": "6de073e92367587b536594c94848f5369e7f6fbe13455b7d29ba52bb11a08361"
         }
     },
     "bin": "GIS.exe",
-    "shortcuts": [["GIS.exe", "Genshin Impact Script"]],
+    "shortcuts": [
+        [
+            "GIS.exe",
+            "Genshin Impact Script"
+        ]
+    ],
     "post_install": [
         "if (Test-Path \"$persist_dir\\config.ini\") {",
         "    Remove-Item \"$dir\\config.ini\"",
