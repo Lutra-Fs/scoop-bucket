@@ -1,12 +1,12 @@
 {
-    "version": "4.7.0-rc.1",
+    "version": "4.7.0",
     "description": "An Arknights game assissant",
     "homepage": "https://maa.plus/",
     "license": "AGPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/MaaAssistantArknights/MaaRelease/releases/download/v4.7.0-rc.1/MAA-v4.7.0-rc.1-win-x64.zip",
-            "hash": "75cf6b1a6d51cd314cfb2fd88d15be1e65cb558cf3e3f4f1f647cd320d64135e"
+            "url": "https://github.com/MaaAssistantArknights/MaaRelease/releases/download/v4.7.0/MAA-v4.7.0-win-x64.zip",
+            "hash": "c91c96ae9c10a531c8f49b8ddc3b05b6a91e11cfd31d66e1cbc2b248a61d5f58"
         }
     },
     "bin": "MeoAsstGUI.exe",
