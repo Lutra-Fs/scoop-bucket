@@ -9,10 +9,10 @@
             "hash": "dcd460e4e6920d74251e305f5f544d23718005841890c8e03fe2a660800f92b7"
         }
     },
-    "bin": "MeoAsstGUI.exe",
+    "bin": "MAA.exe",
     "shortcuts": [
         [
-            "MeoAsstGUI.exe",
+            "MAA.exe",
             "MaaAssistantArknights"
         ]
     ],
