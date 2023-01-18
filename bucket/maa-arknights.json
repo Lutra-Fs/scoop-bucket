@@ -19,17 +19,7 @@
         ],
         "adb": "adb"
     },
-    "pre_install": [
-        "if (Test-Path \"$persist_dir\\gui.json\") {",
-        "    Copy-Item \"$persist_dir\\gui.json\" \"$dir\"",
-        "} else {",
-        "    ensure \"$persist_dir\" | Out-Null",
-        "    Set-Content \"$dir\\gui.json\" '{','\"VersionUpdate.AutoDownloadUpdatePackage\": \"False\",', '\"VersionUpdate.UseAria2\": \"False\"','}' -Encoding Ascii",
-        "}"
-    ],
-    "uninstaller": {
-        "script": "Copy-Item \"$dir\\gui.json\" \"$persist_dir\" -ErrorAction SilentlyContinue -Force"
-    },
+    
     "checkver": {
         "github": "https://github.com/MaaAssistantArknights/MaaAssistantArknights"
     },
