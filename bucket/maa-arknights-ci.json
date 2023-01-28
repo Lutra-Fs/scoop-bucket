@@ -1,12 +1,12 @@
 {
-    "version": "4.10.4-beta.1",
+    "version": "4.10.4",
     "description": "An Arknights game assissant",
     "homepage": "https://maa.plus/",
     "license": "AGPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/MaaAssistantArknights/MaaRelease/releases/download/v4.10.4-beta.1/MAA-v4.10.4-beta.1-win-x64.zip",
-            "hash": "11d94aaa8ec00f3f2e99c84a6edcbc7763576a4d5fd5a123b35b8596bea9cdbb"
+            "url": "https://github.com/MaaAssistantArknights/MaaRelease/releases/download/v4.10.4/MAA-v4.10.4-win-x64.zip",
+            "hash": "d7c8437d1a168f74a26bd2fa9a9004e500d7d7783a89c1da9af54460b7fb961d"
         }
     },
     "bin": "MAA.exe",
