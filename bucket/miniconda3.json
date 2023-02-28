@@ -5,23 +5,21 @@
     "license": "BSD-3-Clause",
     "architecture": {
         "64bit": {
-            "url": "https://repo.anaconda.com/miniconda/Miniconda3-py310_23.1.0-1-Windows-x86_64.exe",
+            "url": "https://repo.anaconda.com/miniconda/Miniconda3-py310_23.1.0-1-Windows-x86_64.exe#/setup.exe",
             "hash": "d4517212c8ac44fd8b5ccc2d4d9f38c2dd924c77a81c2be92c3a72e70dd3e907"
         }
     },
     "installer": {
-        "args": [
-            "/S",
-            "/InstallationType=JustMe",
-            "/RegisterPython=0",
-            "/AddToPath=0",
-            "/NoRegistry=1",
-            "/NoShortcuts=1",
-            "/D=$dir"
+        "script": [
+            "# Using Start-Process as a workaround because the installer will not work properly when args are quoted (e.g. \"`\"/S`\"\")",
+            "# Move the installer to the upper directory to avoid the error \"The installatiom directory is not empty.\"",
+            "Move-Item \"$dir\\setup.exe\" \"$dir\\..\\setup.exe\" | Out-Null",
+            "Start-Process \"$dir\\..\\setup.exe\" -ArgumentList @('/S', '/InstallationType=JustMe', '/RegisterPython=0', '/AddToPath=0', '/NoRegistry=1', \"/D=$dir\") -Wait | Out-Null"
         ]
     },
     "bin": "scripts\\conda.exe",
     "post_install": [
+        "Remove-Item \"$dir\\..\\setup.exe\" -Force | Out-Null",
         "# Prevent creating shortcuts (/NoShortcuts is not supported currently: https://github.com/conda/constructor/pull/466#issuecomment-1132732254=)",
         "(& $dir\\_conda.exe constructor --prefix $dir --rm-menus) | Out-Null",
         "# Set auto_activate_base to false",
@@ -36,7 +34,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://repo.anaconda.com/miniconda/Miniconda3-py$matchPyversion_$version-Windows-x86_64.exe"
+                "url": "https://repo.anaconda.com/miniconda/Miniconda3-py$matchPyversion_$version-Windows-x86_64.exe#/setup.exe"
             }
         },
         "hash": {
