@@ -10,11 +10,16 @@
             "hash": "520781fc767013f6f57af15132ecf7c667373537ff58399e5c6b5329cee28f8a"
         }
     },
-    "bin": "MAA.exe",
+    "bin": [
+        [
+            "MAA.exe",
+            "maa-ci"
+        ]
+    ],
     "shortcuts": [
         [
             "MAA.exe",
-            "MaaAssistantArknights"
+            "MaaAssistantArknights CI ver"
         ]
     ],
     "suggest": {
