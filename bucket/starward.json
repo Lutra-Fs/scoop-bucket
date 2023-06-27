@@ -1,0 +1,49 @@
+{
+    "version": "0.7.0",
+    "description": "Game Launcher for miHoYo",
+    "notes": [
+        "the newest version should always been used, the internal update check cannot been disabled."
+    ],
+    "homepage": "https://github.com/Scighost/Starward",
+    "license": "MIT license",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Scighost/Starward/releases/download/0.7.0/Starward_Portable_0.7.0_x64.7z",
+            "hash": "3456ddbc546add36bad52a18d3be544bd384fce6d44da925297bc8e24aea3082"
+        },
+        "arm64": {
+            "url": "https://github.com/Scighost/Starward/releases/download/0.7.0/Starward_Portable_0.7.0_arm64.7z",
+            "hash": "4f2a01d130f329cecd6efed23dd2076fd734f1eedb1c10d04204aad1c4768df7"
+        }
+    },
+    "extract_dir": "Starward",
+    "bin": "Starward.exe",
+    "persist": "data",
+    "shortcuts": [
+        [
+            "Starward.exe",
+            "Starward"
+        ]
+    ],
+    "post_install": [
+        "if (!(Test-Path \"HKCU:\\Software\\Starward\")) {",
+        "   New-Item -Path \"HKCU:\\Software\\Starward\" -Force | Out-Null",
+        "}",
+        "if (!(Get-ItemProperty -Path \"HKCU:\\Software\\Starward\" -Name \"ConfigDirectory\" -ErrorAction SilentlyContinue)) {",
+        "   New-ItemProperty \"HKCU:\\Software\\Starward\" -Name \"ConfigDirectory\" -Value \"$persist_dir\\data\" -PropertyType String | Out-Null",
+        "}"
+    ],
+    "checkver": {
+        "github": "https://github.com/Scighost/Starward"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Scighost/Starward/releases/download/$version/Starward_Portable_$version_x64.7z"
+            },
+            "arm64": {
+                "url": "https://github.com/Scighost/Starward/releases/download/$version/Starward_Portable_$version_arm64.7z"
+            }
+        }
+    }
+}
