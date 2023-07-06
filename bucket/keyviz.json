@@ -1,16 +1,25 @@
 {
-    "version": "1.0.2",
+    "version": "1.0.6",
     "description": "a free and open-source software to visualize your keystrokes in realtime",
     "homepage": "https://mularahul.github.io/keyviz",
-    "license": "AGPL-3.0-only",
-    "url": "https://github.com/mulaRahul/keyviz/releases/download/v1.0.2/keyviz-portable-v1.0.2.exe#/keyviz.exe",
-    "hash": "33cb85d3f8e73b66858e3b927f9228db2c0693265631c1990644d1fe45a20b00",
+    "license": "GPL-3.0-only",
+    "url": "https://github.com/mulaRahul/keyviz/releases/download/v1.0.6/keyviz-v1.0.6-portable.zip",
+    "hash": "5dcebe08768ecd7e86d453f6be36346b2cc744183598195fee4c7b4931a8b4b3",
+    "pre_install": [
+        "# Rename the executable to keyviz.exe",
+        "Move-Item -Path (Join-Path $dir \"keyviz-v$version-portable.exe\") -Destination (Join-Path $dir \"keyviz.exe\") -Force",
+    ],
     "bin": "keyviz.exe",
-    "shortcuts": [["keyviz.exe", "keyviz"]],
+    "shortcuts": [
+        [
+            "keyviz.exe",
+            "keyviz"
+        ]
+    ],
     "checkver": {
         "github": "https://github.com/mulaRahul/keyviz"
     },
     "autoupdate": {
-        "url": "https://github.com/mulaRahul/keyviz/releases/download/v$version/keyviz-portable-v$version.exe#/keyviz.exe"
+        "url": "https://github.com/mulaRahul/keyviz/releases/download/v$version/keyviz-v$version-portable.zip"
     }
 }
