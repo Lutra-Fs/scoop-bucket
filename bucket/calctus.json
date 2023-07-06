@@ -3,7 +3,7 @@
     "version": "0.5.8576.31195-beta",
     "description": "a calculator for Windows.",
     "homepage": "https://github.com/shapoco/calctus",
-    "license": "MIT license",
+    "license": "MIT",
     "architecture": {
         "64bit": {
             "url": "https://github.com/shapoco/calctus/releases/download/v0.5.8576.31195-beta/calctus-v0.5.8576.31195-beta.zip",
