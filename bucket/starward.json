@@ -1,7 +1,7 @@
 {
     "version": "0.8.2",
     "description": "Game Launcher for miHoYo",
-    "notes": "the newest version should always been used, the internal update check cannot been disabled.",
+    "notes": "the newest version should always be used, the internal update check cannot be disabled.",
     "homepage": "https://github.com/Scighost/Starward",
     "license": "MIT license",
     "architecture": {
@@ -29,8 +29,7 @@
         "}",
         "else {",
         "    New-Item \"$persist_dir\\config.ini\" -ItemType File | Out-Null",
-        "    Set-Content -Path \"$persist_dir\\config.ini\" -Value \"EnableConsole = false
-UserDataFolder=./data\"",
+        "    Set-Content -Path \"$persist_dir\\config.ini\" -Value \"EnableConsole = false\nUserDataFolder=./data\"",
         "    Copy-Item \"$persist_dir\\config.ini\" \"$dir\"",
         "}"
     ],
