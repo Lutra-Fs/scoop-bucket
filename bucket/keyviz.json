@@ -7,7 +7,7 @@
     "hash": "5dcebe08768ecd7e86d453f6be36346b2cc744183598195fee4c7b4931a8b4b3",
     "pre_install": [
         "# Rename the executable to keyviz.exe",
-        "Move-Item -Path (Join-Path $dir \"keyviz-v$version-portable.exe\") -Destination (Join-Path $dir \"keyviz.exe\") -Force",
+        "Move-Item -Path (Join-Path $dir \"keyviz-v$version-portable.exe\") -Destination (Join-Path $dir \"keyviz.exe\") -Force"
     ],
     "bin": "keyviz.exe",
     "shortcuts": [
