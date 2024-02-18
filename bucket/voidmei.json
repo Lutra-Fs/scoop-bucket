@@ -1,11 +1,11 @@
 {
     "notes": "If the font can't be displayed properly, please change the font property in 'language/cur.properties' to a font that can be displayed properly on your system, or install fonts under font folder in $dir",
-    "version": "1.55",
+    "version": "1.560",
     "description": "a java gui frontend for War Thunder's 8111 port",
     "homepage": "https://github.com/matrixsukhoi/voidmei",
     "license": "GPL-3.0-only",
-    "url": "https://github.com/matrixsukhoi/voidmei/releases/download/1.55/VoidMei_v1_55.zip",
-    "hash": "4c12cbc4091614e62ae41082ea07d48be210204a141c9e4663a896723751a74d",
+    "url": "https://github.com/matrixsukhoi/voidmei/releases/download/1.560/VoidMei_v1_560.zip",
+    "hash": "68aaf9d239d56614e11b0a839a6202f80df9b235652d9ef346df843040bf51dd",
     "bin": "voidmei.exe",
     "shortcuts": [
         [
