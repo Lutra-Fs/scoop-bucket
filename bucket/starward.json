@@ -29,8 +29,7 @@
         "}",
         "else {",
         "    New-Item \"$persist_dir\\config.ini\" -ItemType File | Out-Null",
-        "    Set-Content -Path \"$persist_dir\\config.ini\" -Value \"EnableConsole = false
-UserDataFolder=./data\"",
+        "    Set-Content -Path \"$persist_dir\\config.ini\" -Value \"EnableConsole = false\nUserDataFolder=./data\"",
         "    Copy-Item \"$persist_dir\\config.ini\" \"$dir\"",
         "}"
     ],
