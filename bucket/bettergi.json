@@ -1,12 +1,12 @@
 {
-    "version": "0.36.1",
+    "version": "0.37.1",
     "description": "Better Genshin Impact, provide useful functions like auto pickup etc.",
     "homepage": "https://github.com/babalae/better-genshin-impact",
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/babalae/better-genshin-impact/releases/download/0.36/BetterGI_v0.36.1.7z",
-            "hash": "d3c15b3f60c5fac95d30ad2d99c889ac19268b590a2ef26238dd71a44b75ff0e"
+            "url": "https://github.com/babalae/better-genshin-impact/releases/download/0.37/BetterGI_v0.37.1.7z",
+            "hash": "19e321f6db6547600d9ae208aa61f73d13aa383832e404ba33a00cc7f2b23fc0"
         }
     },
     "extract_dir": "BetterGI",
