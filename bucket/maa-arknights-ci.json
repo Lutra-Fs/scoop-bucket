@@ -1,13 +1,13 @@
 {
     "notes": "CI version, the second last string in version is not stable, if there is a new version which has not been updated in manifest, please contact me via github issues.",
-    "version": "5.15.1-alpha.1.d034.g3babe9d76",
+    "version": "5.15.1-alpha.1.d038.g3d7b7d5e5",
     "description": "An Arknights game assissant",
     "homepage": "https://maa.plus/",
     "license": "AGPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/MaaAssistantArknights/MaaRelease/releases/download/v5.15.1-alpha.1.d034.g3babe9d76/MAA-v5.15.1-alpha.1.d034.g3babe9d76-win-x64.zip",
-            "hash": "ca942b29a9ffc9892fa878aecc7044460ea2f76166a79fe60ba78f44617a952c"
+            "url": "https://github.com/MaaAssistantArknights/MaaRelease/releases/download/v5.15.1-alpha.1.d038.g3d7b7d5e5/MAA-v5.15.1-alpha.1.d038.g3d7b7d5e5-win-x64.zip",
+            "hash": "86dd29b67e73f3b732926e8801b4cbfb76e7fd12e99ee202db4c85180274f049"
         }
     },
     "shortcuts": [
