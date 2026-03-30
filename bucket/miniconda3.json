@@ -1,12 +1,12 @@
 {
-    "version": "24.9.2-0",
+    "version": "26.1.1-1",
     "homepage": "https://conda.io/miniconda.html",
     "description": "Miniconda is a free minimal installer for conda.",
     "license": "BSD-3-Clause",
     "architecture": {
         "64bit": {
-            "url": "https://repo.anaconda.com/miniconda/Miniconda3-py312_24.9.2-0-Windows-x86_64.exe#/setup.exe",
-            "hash": "3a8897cc5d27236ade8659f0e119f3a3ccaad68a45de45bfdd3102d8bec412ab"
+            "url": "https://repo.anaconda.com/miniconda/Miniconda3-py312_26.1.1-1-Windows-x86_64.exe#/setup.exe",
+            "hash": "6d5c7bd0f832e76d1a0395b9cba7c792c47e86a4af48a41f95202ead46cb8333"
         }
     },
     "installer": {
@@ -28,8 +28,8 @@
         "(& $dir\\scripts\\conda.exe shell.powershell hook) | Out-String | Invoke-Expression"
     ],
     "checkver": {
-        "url": "https://docs.anaconda.com/free/miniconda/miniconda-other-installer-links/",
-        "re": "Miniconda3-py(?<pyversion>[\\d]+)_([\\d.-]+)-Windows"
+        "url": "https://repo.anaconda.com/miniconda/",
+        "re": "Miniconda3-py(?<pyversion>312)_(?<version>[\\d.-]+)-Windows-x86_64\\.exe"
     },
     "autoupdate": {
         "architecture": {
