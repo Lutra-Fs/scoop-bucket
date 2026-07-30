@@ -1,12 +1,12 @@
 {
-    "version": "26.5.3-1",
+    "version": "26.5.3-2",
     "homepage": "https://conda.io/miniconda.html",
     "description": "Miniconda is a free minimal installer for conda.",
     "license": "BSD-3-Clause",
     "architecture": {
         "64bit": {
-            "url": "https://repo.anaconda.com/miniconda/Miniconda3-py312_26.5.3-1-Windows-x86_64.exe#/setup.exe",
-            "hash": "60ab6c430d19ca822841ecfc101d465f3c826ee2d2a3d6c028ffab0f3bcde57a"
+            "url": "https://repo.anaconda.com/miniconda/Miniconda3-py312_26.5.3-2-Windows-x86_64.exe#/setup.exe",
+            "hash": "75e829b26bd7b33b1dce118639b8f39e561a6ebaa3b593b633d7445dd1a2d65a"
         }
     },
     "installer": {
